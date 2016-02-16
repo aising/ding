@@ -1,0 +1,37 @@
+/*******************************************************
+        BASE js style
+********************************************************/
+#js-lockBg{
+position: fixed;
+top: 0;
+left: 0;
+background: #333;
+opacity:.60;
+filter:alpha(opacity=60);
+width: 100%;
+height: 100%;
+}
+#js-confrimBox{
+    position: fixed;
+    background: #fff;
+    padding: 10px;
+    border: 3px solid #D1D1C2;
+}
+#js-confrimBox .confrimBoxTitle{
+    /*height: 10%;*/
+    margin-bottom: 20px;
+}
+#js-confrimBox .confrimBoxMsg{
+    margin-bottom: 10px;
+    /*height: 40%;*/
+}
+#js-confrimBox .confrimBoxButton{
+    background: #F2F2F2;
+    /*height: 10%;*/
+}
+
+#js-base-loading
+{
+    position: fixed;
+    z-index: 9999;
+}

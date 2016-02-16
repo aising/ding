@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<link href="media/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/light.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="media/css/uniform.default.css" rel="stylesheet" type="text/css">
+	
+	<title>表格</title>
+</head>
+<body>
+<div style="padding:10px;">
+<a class="btn green" href="javascript:window.location.href='?m=curd&c=add&tb=type_notify'"><i class="icon-plus"></i> 添加</a>
+</div>
+<div style="padding:10px;">
+		<label class="inline">
+			下拉框
+			<select class="m-wrap small">
+				<option value="5" selected="selected">5</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="-1">All</option>
+			</select>
+		</label>
+		<label class="inline">
+			文本框
+			<input type="text" placeholder="small" class="m-wrap small">
+		</label>
+		<button class="btn purple" style="vertical-align:top;">搜索 <i class="icon-search"></i></button>
+	
+</div>
+<table class="table table-bordered table-hover" style="margin-top:10px;">
+	<thead>
+	        <tr class="first-child">
+		        <td>功能编号</td> 
+		        <td>名称</td>
+                <td>所属类型</td>
+				<td>URI</td>
+				<td>备注</td>
+		        <td>最后更新时间</td>
+		        <td>操作</td>
+	        </tr>
+	    </thead>
+	    <tbody>
+        	    	        <tr>
+            	<td>10</td> 
+		        <td>帐号密码登录请求</td>
+                <td>GAS</td>
+				<td>account.app</td>
+				<td></td>
+		        <td>2014-03-11 16:17:53</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=10">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=10')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>11</td> 
+		        <td>新帐号密码登录</td>
+                <td>GAS</td>
+				<td>newaccount.app</td>
+				<td></td>
+		        <td>2014-03-11 18:18:57</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=11">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=11')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>101</td> 
+		        <td>WEB专用游戏通知接口</td>
+                <td>WEB</td>
+				<td>web</td>
+				<td>暂时没用</td>
+		        <td>2014-03-12 09:25:18</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=101">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=101')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>102</td> 
+		        <td>WEB专用GAS通知接口</td>
+                <td>WEB</td>
+				<td>web</td>
+				<td>暂时没用</td>
+		        <td>2014-03-12 09:25:24</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=102">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=102')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>201</td> 
+		        <td>获取用户游戏相关属性</td>
+                <td>GAME</td>
+				<td>GetUserInfo.app</td>
+				<td><res status="0" draw_bout="4" />
+失败：
+<res status=”1”msg=”失败原因” /></td>
+		        <td>2014-03-11 11:18:49</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=201">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=201')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>202</td> 
+		        <td>修改用户属性</td>
+                <td>GAME</td>
+				<td>ModifyUserInfo.app</td>
+				<td>成功：
+<res status="0" gold="当前数量"/>
+失败：
+<res status="1" msg=”错误原因”/></td>
+		        <td>2014-03-11 11:25:52</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=202">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=202')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>203</td> 
+		        <td>支付通知</td>
+                <td>GAME</td>
+				<td>PayNotice.app</td>
+				<td><res status="0" OrderNumber="0" SerialNumber="0" />
+	返回status = 0 成功，返回status = 1失败</td>
+		        <td>2014-03-11 11:37:26</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=203">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=203')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>204</td> 
+		        <td>封号通知</td>
+                <td>GAME</td>
+				<td>CloseAccount.app</td>
+				<td><res status="0" /></td>
+		        <td>2014-03-11 11:38:14</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=204">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=204')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>205</td> 
+		        <td>大厅配置更新通知</td>
+                <td>GAME</td>
+				<td>UpdateLobbyConfig.app</td>
+				<td>成功返回：<res status="0" msg=””/>
+失败返回：<res status="1" msg=”失败原因”/></td>
+		        <td>2014-03-11 11:49:53</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=205">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=205')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>206</td> 
+		        <td>房间配置更新通知</td>
+                <td>GAME</td>
+				<td>UpdateRoomConfig.app</td>
+				<td>成功返回：<res status="0" />
+失败返回：<res status="1" /></td>
+		        <td>2014-03-11 14:11:23</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=206">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=206')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>207</td> 
+		        <td>增加奖品</td>
+                <td>GAME</td>
+				<td>IncreasePrize.app</td>
+				<td>如果Confirm为0
+成功返回：<res status="0" />
+失败返回：<res status="1" />
+
+如果Confirm为1
+成功返回，：
+<res status="0"Prizeid ="11"  Count="4"/>
+所有失败返回：
+<res status="1"/></td>
+		        <td>2014-03-11 14:12:03</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=207">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=207')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>208</td> 
+		        <td>减少奖品</td>
+                <td>GAME</td>
+				<td>DecreasePrize.app</td>
+				<td>如果Confirm为0
+成功返回：<res status="0" />
+失败返回：<res status="1" />
+
+如果Confirm为1
+成功返回，：
+<res status="0"Prizeid ="11"  Count="4"/>
+所有失败返回：
+<res status="1"/></td>
+		        <td>2014-03-11 14:12:42</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=208">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=208')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>209</td> 
+		        <td>删除奖品</td>
+                <td>GAME</td>
+				<td>DeletePrize.app</td>
+				<td>如果Confirm为0
+成功返回：<res status="0" />
+失败返回：<res status="1" />
+
+如果Confirm为1
+成功返回，：
+<res status="0"Prizeid ="11"  Count="4"/>
+所有失败返回：
+<res status="1"/></td>
+		        <td>2014-03-11 14:13:16</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=209">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=209')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>210</td> 
+		        <td>添加奖品</td>
+                <td>GAME</td>
+				<td>AddPrize.app</td>
+				<td>如果Confirm为0
+成功返回：<res status="0" />
+失败返回：<res status="1" />
+
+如果Confirm为1
+成功返回，：
+<res status="0"Prizeid ="11"  Count="4"/>
+所有失败返回：
+<res status="1"/></td>
+		        <td>2014-03-11 14:13:45</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=210">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=210')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>211</td> 
+		        <td>查询奖品</td>
+                <td>GAME</td>
+				<td>QueryPrize.app</td>
+				<td>成功返回，：
+<res status="0"bonus="[....]"/>
+所有失败返回：
+<res status="1"/></td>
+		        <td>2014-03-11 14:14:23</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=211">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=211')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>212</td> 
+		        <td>修改用户道具</td>
+                <td>GAME</td>
+				<td>ModifyUserProp.app</td>
+				<td>成功返回：<res status="0" />
+失败返回：<res status="1"/></td>
+		        <td>2014-03-11 14:14:52</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=212">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=212')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>213</td> 
+		        <td>获取用户道具</td>
+                <td>GAME</td>
+				<td>GetUserProp.app</td>
+				<td>成功返回：<res status="0" />
+失败返回：<res status="1" /></td>
+		        <td>2014-03-11 14:15:37</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=213">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=213')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>214</td> 
+		        <td>登陆公告更新消息</td>
+                <td>GAME</td>
+				<td>UpdateLoginAnc.app</td>
+				<td>返回数据
+失败返回: < res status ="1" msg="失败原因"/>
+成功返回:
+<resstatus="0">
+</res></td>
+		        <td>2014-03-11 14:16:15</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=214">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=214')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>215</td> 
+		        <td>游戏公告更新消息</td>
+                <td>GAME</td>
+				<td>UpdateGameAnc.app</td>
+				<td>返回数据
+失败返回: < res status ="1" msg="失败原因"/>
+成功返回:
+<resstatus="0">
+</res></td>
+		        <td>2014-03-11 14:16:42</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=215">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=215')">删除</a></td>
+	        </tr>
+        	        <tr>
+            	<td>216</td> 
+		        <td>全局广播消息</td>
+                <td>GAME</td>
+				<td>GlobalMessage.app</td>
+				<td>返回数据
+失败返回: < res status ="1" msg="失败原因"/>
+成功返回:
+<resstatus="0">
+</res></td>
+		        <td>2014-03-11 14:17:08</td>
+		        <td><a href="?m=curd&c=edit&tb=type_notify&id=216">修改</a> | <a href="javascript:;" onclick="del('?m=curd&c=del&tb=type_notify&id=216')">删除</a></td>
+	        </tr>
+        	    	    </tbody>
+	</table>
+
+</table>
+<div class="pagination">
+	<ul>
+		<li class="prev"><a href="#">← <span class="hidden-480">Previous</span></a></li>
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li class="active"><a href="#">5</a></li>
+		<li class="next disabled"><a href="#"><span class="hidden-480">Next</span> → </a></li>
+	</ul>
+</div>
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+	<script src="media/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="media/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="media/js/additional-methods.min.js"></script>
+	<!--[if lt IE 9]>
+
+	<script src="media/js/excanvas.min.js"></script>
+
+	<script src="media/js/respond.min.js"></script>  
+
+	<![endif]-->   
+
+	<script src="media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="media/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<link href="media/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="media/css/light.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="media/css/uniform.default.css" rel="stylesheet" type="text/css">
+	
+	<title>表单</title>
+</head>
+<body>
+<div style="padding:10px;">
+<form action="#" class="form-horizontal">
+	<div class="control-group">
+		<label class="control-label">Small Input</label>
+		<div class="controls">
+			<input type="text" placeholder="small" data-required="1" name="name" class="m-wrap small">
+			<span class="help-inline">Some hint here</span>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Disabled Input</label>
+		<div class="controls">   
+			<input class="m-wrap medium" type="text" placeholder="Disabled input here..." disabled="">
+			<span class="help-inline">Some hint here</span>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Readonly Input</label>
+		<div class="controls">   
+			<input class="m-wrap medium" readonly="" type="text" placeholder="Readonly input here..." disabled="">
+			<span class="help-inline">Some hint here</span>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Small Dropdown</label>
+		<div class="controls">
+			<select class="small m-wrap" tabindex="1">
+				<option value="Category 1">Category 1</option>
+				<option value="Category 2">Category 2</option>
+				<option value="Category 3">Category 5</option>
+				<option value="Category 4">Category 4</option>
+			</select>
+		</div>
+	</div>
+
+	
+
+	<div class="control-group">
+		<label class="control-label">Radio Buttons</label>
+		<div class="controls">
+			<label class="radio"><input type="radio" name="optionsRadios1" value="option1">Option 1</label>
+			<label class="radio"><input type="radio" name="optionsRadios1" value="option2" checked="">Option 2</label>  
+			<label class="radio"><input type="radio" name="optionsRadios1" value="option2">Option 3</label>  
+
+		</div>
+
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Checkbox</label>
+		<div class="controls">
+			<label class="checkbox"><input type="checkbox" value="">Checkbox 1</label>
+			<label class="checkbox"><input type="checkbox" value="">Checkbox 2</label>
+		</div>
+	</div>
+
+	<div class="control-group">
+		<label class="control-label">Large Textarea</label>
+		<div class="controls">
+			<textarea class="large m-wrap" rows="3"></textarea>
+		</div>
+	</div>
+
+	<div class="form-actions">
+		<button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
+		<button type="button" class="btn">Cancel</button>
+	</div>
+
+</form>
+</div>
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<script src="media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+
+	<script src="media/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="media/js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="media/js/additional-methods.min.js"></script>
+	<!--[if lt IE 9]>
+
+	<script src="media/js/excanvas.min.js"></script>
+
+	<script src="media/js/respond.min.js"></script>  
+
+	<![endif]-->   
+
+	<script src="media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="media/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="media/js/jquery.uniform.min.js" type="text/javascript" ></script>
+
+	<!-- END CORE PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+
+	<script type="text/javascript" src="media/js/ckeditor.js"></script>  
+
+	<script type="text/javascript" src="media/js/bootstrap-fileupload.js"></script>
+
+	<script type="text/javascript" src="media/js/chosen.jquery.min.js"></script>
+
+	<script type="text/javascript" src="media/js/select2.min.js"></script>
+
+	<script type="text/javascript" src="media/js/wysihtml5-0.3.0.js"></script> 
+
+	<script type="text/javascript" src="media/js/bootstrap-wysihtml5.js"></script>
+
+	<script type="text/javascript" src="media/js/jquery.tagsinput.min.js"></script>
+
+	<script type="text/javascript" src="media/js/jquery.toggle.buttons.js"></script>
+
+	<script type="text/javascript" src="media/js/bootstrap-datepicker.js"></script>
+
+	<script type="text/javascript" src="media/js/bootstrap-datetimepicker.js"></script>
+
+	<script type="text/javascript" src="media/js/clockface.js"></script>
+
+	<script type="text/javascript" src="media/js/date.js"></script>
+
+	<script type="text/javascript" src="media/js/daterangepicker.js"></script> 
+
+	<script type="text/javascript" src="media/js/bootstrap-colorpicker.js"></script>  
+
+	<script type="text/javascript" src="media/js/bootstrap-timepicker.js"></script>
+
+	<script type="text/javascript" src="media/js/jquery.inputmask.bundle.min.js"></script>   
+
+	<script type="text/javascript" src="media/js/jquery.input-ip-address-control-1.0.min.js"></script>
+
+	<script type="text/javascript" src="media/js/jquery.multi-select.js"></script>   
+
+	<script src="media/js/bootstrap-modal.js" type="text/javascript" ></script>
+
+	<script src="media/js/bootstrap-modalmanager.js" type="text/javascript" ></script> 
+
+	<!-- END PAGE LEVEL PLUGINS -->
+
+	<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+	<script src="media/js/app.js"></script>  
+	<script src="media/js/form-validation.js"></script>
+	<!-- END PAGE LEVEL SCRIPTS -->
+
+	<script>
+
+		jQuery(document).ready(function() {       
+
+		   // initiate layout and plugins
+
+			App.init();
+			FormValidation.init();
+
+		});
+
+	</script>
+</body>
+</html>

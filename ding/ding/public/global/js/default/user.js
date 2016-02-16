@@ -1,0 +1,11 @@
+$(document).ready(function(){
+	$("#showperm-1").change(function(){
+		$("#perm-tree").hide();
+		if($(this).attr('checked')){
+			$("#perm-tree").show();
+		}else{
+			$("#perm-tree").hide();
+		}
+	});
+	$('#showperm-1').change();
+});

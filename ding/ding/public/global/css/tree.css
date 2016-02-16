@@ -1,0 +1,24 @@
+/*========================================
+ 树形结构
+========================================*/
+
+ul, ol {
+    list-style: none outside none;
+}
+.tree-wrapper {
+
+}
+.tree-wrapper ul ul {
+    margin-left:20px;
+}
+.tree-wrapper ul li {
+    padding:2px;
+}
+.tree-wrapper ul li:before {
+    content:"|-- ";
+    vertical-align: top;
+}
+.tree-wrapper .label{
+	background-color:#FAFAFA;
+	color:#000;
+}

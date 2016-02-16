@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*公共样式_start*/
+* {margin: 0;padding: 0;list-style: none;border: 0;outline: none;appearance: none;-webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); font-family:"微软雅黑"; font-size:14px;}
+body {width: 100%;margin: 0 auto; background-color:#f5f3f3;}
+a {display: block;-webkit-tap-highlight-color: rgba(0,0,0,0);color: #000;text-decoration: none;}
+/*CSS公用样式*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, blockquote, th, td {margin: 0;padding: 0;}
+table {border-collapse: collapse;border-spacing: 0;}
+img {border: 0;}
+li {list-style: none;}
+input, textarea, select {font-family: inherit;font-size: inherit;font-weight: inherit;}
+
+.white_bg{ background-color:#ffffff;}
+/*公共样式_end*/
+
+/*首页===============================================*/
+/*左边菜单tab*/
+.menu_tab{ width:26%; overflow:hidden;border-right:1px solid #959595; float:left; height:100%;}
+	.menu_tab ul{ width:100%;}
+	.menu_li{ display:block; position:relative; width:100%; height:46px; line-height:46px; text-align:center; color:#606060; border-bottom:1px solid #959595;background-color:#eae8e8;}
+	.teJia{ position:absolute; top:0; right:0; width:20px;}
+	.menu_li .num{ position:absolute; top:2px; right:1px; background-color:#e04141; width:15px; height:15px; border-radius:15px; color:#ffffff; font-size:12px; text-align:center; line-height:15px;}
+	/*选中时附加样式*/
+	.selected{ text-indent:-5px; background-color:#ffffff; border-left:5px solid #f6821f; color:#f6821f;}
+	.selected .num{right:6px;text-indent:0;}
+	
+/*右侧菜单list*/
+
+.food_list{ width:73%; float:left; height:auto;}
+	.total_title{ width:100%; background-color:#ffffff;float:left; height:28px; line-height:28px; text-align:right; font-size:12px; margin-bottom:10px;}
+		.total_title span{ display:initial;}
+		.total_title a{ font-size:16px; color:#f6821f; display:initial;}
+	.food_list ul{ width:100%; display:block;float:left;}
+	.food_list ul li{ width:auto; height:110px;display:block; position:relative; background-color:#ffffff; padding:10px 8px; white-space:nowrap; margin-bottom:8px;}
+	.pic{height:75px; width:75px; position:relative;float:left;}
+	.food_pic{height:75px; width:75px;  border-radius:3px; overflow:hidden; float:left;}
+		.food_pic img{ height:100%;}
+	.food_msg{ float:left; width:60%;margin-left:8px;font-family:"微软雅黑";}
+		.food_name{ width:90%; color:#555555; font-size:16px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-bottom:5px;    margin-top: 10px;}
+		.lajiao{ width:100%; float:left; height:12px; font-size:12px; color:#de4b37;}
+			.lajiao img{ display:inline-block; float:left;}
+		.food_msg .price{ font-size:12px; color:#969696;}
+		.price a{ display:initial;}
+			.ms_price{ color:#f6821f; text-decoration:line-through ;}
+			.yd_price{ color:#f6821f;}
+		.food_num{ position:absolute; top:-3px; right:-3px;background-color:#e04141; width:20px; height:20px; border-radius:10px; color:#ffffff; font-size:12px; text-align:center; line-height:20px;}
+		.food_total{ display:block; position:absolute; top:42px;right:5px; width:10px;}
+		
+
+/*菜品详情=======================================================================*/
+.food_picture{ height:160px; width:100%; overflow:hidden; text-align:center; background-color:#fff;}
+	.food_picture img{ height:130%;}
+.food_intro{ width:84%; margin-top:10px;background-color:#ffffff; padding:8px 8%; padding-bottom:13px;height:auto; overflow:hidden;}
+	.food_intro .price{ color:#969696; float:right}
+	.name{ width:60%; float:left;}
+	.price02{ width:40%; float:right;}
+.intro{ width:92%; padding:8px 4%; background-color:#ffffff; margin-top:15px; float:left; padding-bottom:20px; margin-bottom:68px;}
+	.intro p{ text-indent:2em;color:#969696; line-height:20px; font-size:14px;}
+	
+	.yuding{ width:220px; height:30px; margin:0 auto; line-height:30px;margin-top:15px; }
+	.yuding p{ font-size:15px; height:30px;width: 90px; line-height:30px;color:#ea5515; display:block; float:left; margin-right:10px; font-weight:bold;}
+	.choose{ height:30px; text-align:center; float:left;line-height:30px; width:90px; border-radius:20px;border:1px solid #f89b4c;}
+		.sub{ display:inline; float:left; width:30px; height:30px;}
+		.add{ display:inline; float:right; width:30px; height:30px;}
+		
+/*底部按钮*/
+.butt_bottom{ position:fixed; bottom:0; left:0; height:56px; border-top:1px solid #c0bfbf; width:100%; background-color:#ffffff;}
+	.select_goOn,.account{ height:30px; line-height:30px; font-size:18px; color:#ea5515; width:49.8%; text-align:center; float:left; margin-top:14px;}
+	.account{ border-left:1px solid #CCC;}
+	
+/*加盟合作=======================================================================*/
+.input-group {width: 100%;padding: 8px 0;border-bottom: 1px solid #ececec;background-color: white;white-space: nowrap;font-size: 13px;float: left;}
+.input-group a {display: inline-block;width: 60%;}
+.input-group input, span {height: 27px;line-height: 27px;}
+.input-group .title_name {border-right: 1px solid #ececec;}
+.input-group input {padding-left: 10px;font-size: 15px;width: 52%;}
+.input-group a input {width: 84%;}
+.title_name {float: left;text-align: center;color: #555;width: 26%;font-size: 16px;white-space: nowrap;}
+.business {width: 100%;border-top: 1px solid #ececec;float: left;background: #FFFFFF;margin-top: 8px;}
+.business .headline {width: 100%;height: 37px;float: left;border-bottom: 1px solid #ececec;}
+.business .headline p {width: 30%;line-height: 37px;text-align: center;color: #555555;font-size: 16px;}
+.business .business_head {width: 100%;min-height: 35px;float: left;border-bottom: 1px solid #ececec;}
+.business .business_head .text_head {width: 30%;height: 35px;float: left;line-height: 35px;text-align: center;font-size: 16px;color: #555555;}
+.business .business_head .light {line-height: 57px;}
+.business .business_head .hes_50 {height: 50px;line-height: 50px;}
+.business .business_head .ws_25 {width: 25%;}
+.business .business_head .text_matter {width: 60%;min-height: 20px;float: left;border-left: 1px solid #ececec;margin-top: 8px;font-size: 14px;color: #555555; line-height: 18px;margin-bottom: 8px;padding-left: 3%;position: relative;}
+
+/*底部按钮*/
+.floor_div{width:100%; height:50px; border-top:#c0bfbf solid 1px; position:fixed; bottom:0px; left:0px; background-color:#ffffff;}
+.floor_btn{ display:block;width:80%; height:38px; line-height:38px; border-radius:3px; margin:0 auto;margin-top:5px; font-size:18px; background-color:#f6821f; color:#ffffff;}
+.tj_btn{width:100%; height:33px; border-radius:3px; margin:0 auto;}
+
+/*关于我们=======================================================================*/
+.content{ width:92%; padding:20px 4% 0; color:#555555; line-height:24px;}
+	.content p{ font-size:14px;}
+
+/*取餐条码=======================================================================*/
+.ewm_area{ width:100%; padding:10px 0; background-color:#FFF; text-align:center; }
+	.ewm_area p{font-size:16px; color:#f6821f; margin-top:10px;}
+.ewm{ width:150px; height:150px; background:url(../image/ewm_k.png) no-repeat; background-size:150px; margin:10px auto;}
+	.ewm img{ width:130px; height:130px; float:left; display:inline; margin-left:10px; margin-top:10px;}
+.dd_details{ width:92%;height:38px; line-height:38px; margin-top:8px; padding:0 4%;}
+	.dd_details span{ font-size:16px; color:#e04141; line-height:38px; display:block; float:left;}
+	.dd_details a{ font-size:12px; color:#f6821f; display:block; float:right;}
+.dingdan_list{ width:100%;height:auto;}
+	.dingdan_list ul{ width:100%; float:left;border-top: 5px solid #f5f3f3}
+	.dingdan_list ul li{ display:inline-block; width:92%;padding:8px 4%;background-color:#ffffff;float:left;}
+	.dingdan_num{ width:21px; height:21px; border-radius:50%; background-color:#e04141; color:#ffffff; line-height:21px; text-align:center; float:left; margin-top:10px; font-size:14px;}
+	.dingdan_num_price{ width:100px; height:21px; border-radius:0%; background-color:#fff; color:#e04141; line-height:21px; text-align:center; float:left; margin-top:10px; font-size:14px;}
+	.td_butt{ height:25px; width:60px; border:1px solid #f6821f; border-radius:2px;line-height:25px; text-align:center; float:right; margin-top:10px; color:#f6821f;}
