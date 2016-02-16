@@ -15,8 +15,6 @@ class LogorderController extends ApplicationController {
 
     public static $delUrl = NULL;
     
-    // public static $status = array(''=>'全部','0'=>'未付款','1'=>'未消费', '2'=>'已经消费','3'=>'退款中','4'=>'退款完毕');
-
     public static $city = array();
 
     public function init() {
