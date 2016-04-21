@@ -5,7 +5,7 @@
 //接收微信传过来的文件，包括：补始验证、地理位置
 error_reporting(0);
 //define your token
-define("TOKEN", "E2K17w2ZX9r9z9BJJw92R0jX1qRm1XH1");
+define("TOKEN", "E265464K17w2Z64X9r9z339BJJ23w92R0j424X15qRm13546XH1");
 $wechatObj = new wechatCallbackapiTest();
 $wechatObj->valid();
 
@@ -55,7 +55,7 @@ class wechatCallbackapiTest
             if($ev == 'subscribe' || !empty( $keyword ))
             {       
                     $msgType = "text"; 
-                    $contentStr = "欢迎关注微微乐！点餐前请选择您附近的门店,<a href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx35be6cdc6a0b2ece&redirect_uri=http://www.wstreet.cn/weixin/can.php?type=2&response_type=code&scope=snsapi_base&state=1&connect_redirect=1#wechat_redirect'>查看附近的门店</a>";
+                    $contentStr = "欢迎关注微微乐！点餐前请选择您附近的门店,<a href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx5d43f5f3tefe&redirect_uri=http://www.ws.cn/weixin/can.php?type=2&response_type=code&scope=snsapi_base&state=1&connect_redirect=1#wechat_redirect'>查看附近的门店</a>";
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
                     echo $resultStr;
             }else{  
